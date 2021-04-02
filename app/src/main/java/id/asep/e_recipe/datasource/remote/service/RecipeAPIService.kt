@@ -1,4 +1,4 @@
-package id.asep.e_recipe.datasource.remote
+package id.asep.e_recipe.datasource.remote.service
 
 import com.haroldadmin.cnradapter.NetworkResponse
 import id.asep.e_recipe.datasource.remote.model.RestError

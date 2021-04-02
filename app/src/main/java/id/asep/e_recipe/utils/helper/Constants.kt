@@ -12,4 +12,5 @@ object Constants {
     const val ARTICLE_TABLE = "article"
     const val ARTICLE_CATEGORY_TABLE = "article-category"
     const val ARTICLE_DETAIL_TABLE = "article-detail"
+    const val ERROR_LOGGING_TABLE = "error-logging"
 }
