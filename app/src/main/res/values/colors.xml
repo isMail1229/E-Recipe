@@ -7,4 +7,19 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--Recipe color-->
+    <color name="orange">#ff4d4d</color>
+    <color name="orange_2">#ff8364</color>
+    <color name="orange_3">#fdb87d</color>
+    <color name="orange_4">#ffe8d5</color>
+    <color name="black_font">#020202</color>
+
+    <!--Optional color-->
+    <color name="yellow">#FFC700</color>
+    <color name="yellow_dark">#BA971B</color>
+    <color name="grey">#8D92A3</color>
+    <color name="white_grey">#F9FAFF</color>
+    <color name="blue_font">#1ABC9C</color>
+    <color name="red_alert">#D9435E</color>
 </resources>
