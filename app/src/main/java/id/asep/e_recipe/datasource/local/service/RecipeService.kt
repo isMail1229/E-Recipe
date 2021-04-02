@@ -17,6 +17,10 @@ interface RecipeService {
 
     suspend fun updateRecipe(recipe: Recipe): Int
 
+    suspend fun getCountRecipe(): Int
+
+    suspend fun getDataRecipeByKeyRecipe(key: String): Recipe?
+
     /*Recipe Detail*/
 
     suspend fun insertRecipeDetail(recipeDetail: RecipeDetail): Long
@@ -32,6 +36,10 @@ interface RecipeService {
     suspend fun insertRecipeCategory(recipeCategories: List<RecipeCategory>): LongArray
 
     suspend fun updateRecipeCategory(recipeCategory: RecipeCategory): Int
+
+    suspend fun getCountRecipeCategories(): Int
+
+    suspend fun getCategoryByKeyCategory(key: String): RecipeCategory?
 
     /*Ingredients*/
 

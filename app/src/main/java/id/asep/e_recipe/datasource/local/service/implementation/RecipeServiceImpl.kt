@@ -35,6 +35,14 @@ class RecipeServiceImpl @Inject constructor(
         return recipeDAO.update(recipe)
     }
 
+    override suspend fun getCountRecipe(): Int {
+        return recipeDAO.getCountRecipe()
+    }
+
+    override suspend fun getDataRecipeByKeyRecipe(key: String): Recipe? {
+        return recipeDAO.getRecipeByKeyRecipe(key)
+    }
+
     override suspend fun insertRecipeDetail(recipeDetail: RecipeDetail): Long {
         return recipeDetailDAO.insert(recipeDetail)
     }
@@ -57,6 +65,14 @@ class RecipeServiceImpl @Inject constructor(
 
     override suspend fun updateRecipeCategory(recipeCategory: RecipeCategory): Int {
         return recipeCategoryDAO.update(recipeCategory)
+    }
+
+    override suspend fun getCountRecipeCategories(): Int {
+        return recipeCategoryDAO.getCountRecipeCategory()
+    }
+
+    override suspend fun getCategoryByKeyCategory(key: String): RecipeCategory? {
+        return recipeCategoryDAO.getRecipeCategoryByKey(key)
     }
 
     override suspend fun insertIngredientRecipe(ingredientRecipe: Ingredients): Long {

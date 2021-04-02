@@ -10,6 +10,6 @@ data class ErrorLogging(
         @PrimaryKey(autoGenerate = true)
         @ColumnInfo(name = "id") val id: Long,
         @ColumnInfo(name = "message") val message: String,
-        @ColumnInfo(name = "status") val statues: Boolean,
+        @ColumnInfo(name = "status") val status: Boolean,
         @ColumnInfo(name = "code") val code: Int
 )

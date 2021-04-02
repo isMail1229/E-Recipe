@@ -8,7 +8,7 @@ object Constants {
     const val RECIPE_INGREDIENTS_TABLE = "recipe-ingredients"
     const val RECIPE_ITEM_TABLE = "recipe-item"
     const val RECIPE_STEP_TABLE = "recipe-step"
-    const val RECIPE_CATEGORY_TABLE = "recipe-category-step"
+    const val RECIPE_CATEGORY_TABLE = "recipe-category"
     const val ARTICLE_TABLE = "article"
     const val ARTICLE_CATEGORY_TABLE = "article-category"
     const val ARTICLE_DETAIL_TABLE = "article-detail"
