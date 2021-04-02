@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">E-Recipe</string>
+    <string name="home">Home</string>
+    <string name="article">Article</string>
+    <string name="search_recipe">Cari Resep Makanan</string>
+    <string name="new_recipe">New Recipe</string>
+    <string name="pilih_article">Pilih Article</string>
 </resources>

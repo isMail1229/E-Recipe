@@ -1,3 +1,5 @@
 package id.asep.e_recipe.ui
 
-class ArticleFragment
+import androidx.fragment.app.Fragment
+
+class ArticleFragment : Fragment()

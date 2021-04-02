@@ -13,4 +13,41 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <!--Custom Theme-->
+    <style name="RecipeApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryVariant">@color/orange_2</item>
+        <item name="colorOnPrimary">@color/white_grey</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="DefaultFont" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/poppins_reguler</item>
+        <item name="android:textColor">@color/black_font</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="DefaultFont.HeaderText">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/_18ssp</item>
+    </style>
+
+    <style name="DefaultFont.TitleText16">
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+
+    <style name="DefaultFont.Content">
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="DefaultFont.PoppinLight">
+        <item name="android:fontFamily">@font/poppins_light</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
 </resources>
