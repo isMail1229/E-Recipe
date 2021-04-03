@@ -1,14 +1,17 @@
 package id.asep.e_recipe.di
 
 import android.content.Context
+import com.facebook.stetho.okhttp3.StethoInterceptor
+import com.haroldadmin.cnradapter.NetworkResponseAdapterFactory
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ActivityComponent
 import dagger.hilt.android.qualifiers.ApplicationContext
+import dagger.hilt.components.SingletonComponent
 import id.asep.e_recipe.BuildConfig
 import id.asep.e_recipe.MainApplication
 import id.asep.e_recipe.utils.helper.Constants
+import id.asep.e_recipe.utils.helper.NullConverteFactory
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -17,7 +20,7 @@ import javax.inject.Singleton
 
 
 @Module
-@InstallIn(ActivityComponent::class)
+@InstallIn(SingletonComponent::class)
 object AppModule {
 
     @Singleton
@@ -37,6 +40,7 @@ object AppModule {
         loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY)
         OkHttpClient.Builder()
                 .addInterceptor(loggingInterceptor)
+                .addNetworkInterceptor(StethoInterceptor())
                 .build()
     } else {
         OkHttpClient
@@ -47,9 +51,11 @@ object AppModule {
     @Singleton
     @Provides
     fun provideRetrofit(okHttpClient: OkHttpClient, BASE_URL: String): Retrofit = Retrofit.Builder()
-            .addConverterFactory(MoshiConverterFactory.create())
             .baseUrl(BASE_URL)
             .client(okHttpClient)
+            .addCallAdapterFactory(NetworkResponseAdapterFactory())
+            .addConverterFactory(NullConverteFactory())
+            .addConverterFactory(MoshiConverterFactory.create())
             .build()
 
 }

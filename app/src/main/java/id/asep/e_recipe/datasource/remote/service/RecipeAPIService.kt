@@ -29,7 +29,7 @@ interface RecipeAPIService {
 
     @GET("/api/recipes/{page}")
     suspend fun getRecipeByPage(
-        @Path(value = "page", encoded = true) page: Long,
+            @Path(value = "page", encoded = true) page: Int,
     ): NetworkResponse<RestResponseList<RecipeResponse>, RestError>
 
     @GET("/api/search/")

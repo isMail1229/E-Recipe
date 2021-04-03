@@ -7,16 +7,17 @@ import id.asep.e_recipe.utils.helper.Constants
 
 @Entity(tableName = Constants.RECIPE_DETAIL_TABLE)
 data class RecipeDetail(
-    @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "id") val id: Long,
-    @ColumnInfo(name = "title") val title: String,
-    @ColumnInfo(name = "thumb") val thumb: String,
-    @ColumnInfo(name = "servings") val servings: String,
-    @ColumnInfo(name = "times") val times: String,
-    @ColumnInfo(name = "difficulty") val difficulty: String,
-    @ColumnInfo(name = "author") val author: String,
-    @ColumnInfo(name = "date_published") val datePublished: String,
-    @ColumnInfo(name = "desc") val description: String
+        @PrimaryKey(autoGenerate = true)
+        @ColumnInfo(name = "id") val id: Long,
+        @ColumnInfo(name = "title") val title: String,
+        @ColumnInfo(name = "thumb") val thumb: String,
+        @ColumnInfo(name = "servings") val servings: String,
+        @ColumnInfo(name = "times") val times: String,
+        @ColumnInfo(name = "difficulty") val difficulty: String,
+        @ColumnInfo(name = "key") val keyRecipe: String,
+        @ColumnInfo(name = "author") val author: String,
+        @ColumnInfo(name = "date_published") val datePublished: String,
+        @ColumnInfo(name = "desc") val description: String
 )
 
 @Entity(tableName = Constants.RECIPE_INGREDIENTS_TABLE)

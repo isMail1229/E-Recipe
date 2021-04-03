@@ -29,6 +29,8 @@ interface RecipeService {
 
     suspend fun updateRecipeDetail(recipeDetail: RecipeDetail): Int
 
+    suspend fun getDetailRecipeLocalByKey(keyRecipe: String): RecipeDetail
+
     /*Recipe Category*/
 
     suspend fun insertRecipeCategory(recipeCategory: RecipeCategory): Long

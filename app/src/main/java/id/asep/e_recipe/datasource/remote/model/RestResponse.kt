@@ -5,7 +5,7 @@ import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
 data class RestResponse<T>(
-    @Json(name = "method") val method: String,
-    @Json(name = "status") val status: Boolean,
-    @Json(name = "result") val result: T? = null
+        @Json(name = "method") val method: String,
+        @Json(name = "status") val status: Boolean,
+        @Json(name = "results") val result: T? = null
 )

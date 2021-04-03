@@ -6,11 +6,11 @@ interface RecipeRepository {
 
     suspend fun getRecipeCategory()
 
-    suspend fun getRecipeByCategory()
+    suspend fun getRecipeByCategory(key: String)
 
-    suspend fun getDetailRecipe()
+    suspend fun getDetailRecipe(keyRecipe: String)
 
-    suspend fun getRecipeByLimit()
+    suspend fun getRecipeByLimit(limit: Int)
 
-    suspend fun getRecipeByPage()
+    suspend fun getRecipeByPage(page: Int)
 }

@@ -15,7 +15,7 @@
     </style>
 
     <!--Custom Theme-->
-    <style name="RecipeApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="RecipeApp" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/orange</item>
         <item name="colorPrimaryVariant">@color/orange_2</item>
