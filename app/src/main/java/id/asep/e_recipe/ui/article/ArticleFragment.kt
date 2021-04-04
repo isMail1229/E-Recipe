@@ -1,4 +1,4 @@
-package id.asep.e_recipe.ui
+package id.asep.e_recipe.ui.article
 
 import androidx.fragment.app.Fragment
 

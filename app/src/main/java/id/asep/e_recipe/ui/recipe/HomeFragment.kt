@@ -1,4 +1,4 @@
-package id.asep.e_recipe.ui
+package id.asep.e_recipe.ui.recipe
 
 import android.os.Bundle
 import android.view.LayoutInflater

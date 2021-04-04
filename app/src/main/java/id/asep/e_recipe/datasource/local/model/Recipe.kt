@@ -15,4 +15,5 @@ data class Recipe(
     @ColumnInfo(name = "times") val times: String,
     @ColumnInfo(name = "portion") val portion: String,
     @ColumnInfo(name = "difficulty") val difficulty: String,
+    @ColumnInfo(name = "is_favorite") val isFavorite: Boolean = false
 )

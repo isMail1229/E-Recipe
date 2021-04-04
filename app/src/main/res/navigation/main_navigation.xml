@@ -6,12 +6,12 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="id.asep.e_recipe.ui.HomeFragment"
+        android:name="id.asep.e_recipe.ui.recipe.HomeFragment"
         android:label="Home" />
 
     <fragment
         android:id="@+id/articleFragment"
-        android:name="id.asep.e_recipe.ui.ArticleFragment"
+        android:name="id.asep.e_recipe.ui.article.ArticleFragment"
         android:label="Article" />
 
 </navigation>

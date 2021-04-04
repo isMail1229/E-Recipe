@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -32,7 +33,9 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_food_menu" />
+        app:layout_constraintTop_toBottomOf="@+id/search_food_menu"
+        tools:itemCount="6"
+        tools:listitem="@layout/category_recipe_item" />
 
     <TextView
         android:id="@+id/new_recipe_label"
@@ -50,10 +53,11 @@
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/_16sdp"
         android:orientation="vertical"
-        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/new_recipe_label" />
+        app:layout_constraintTop_toBottomOf="@id/new_recipe_label"
+        tools:listitem="@layout/recipe_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
